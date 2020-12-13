@@ -25,6 +25,6 @@ Link to the app: https://covid19turkiye.herokuapp.com/
 -  **on Heroku** 
 
 ### Data Resources
-Data is taken from this project, it is updated on daily basis after daily case announcements of Ministry of Health:
+Data is taken from the project below, it is updated on daily basis after daily case announcements of Ministry of Health:
 https://github.com/ozanerturk/covid19-turkey-api/blob/master/dataset/timeline.json
 Thanks to Ozan Ertürk for data sharing.
