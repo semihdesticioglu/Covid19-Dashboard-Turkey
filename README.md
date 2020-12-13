@@ -1,5 +1,6 @@
 # Covid-19 Dashboard Turkey  :computer: :chart_with_upwards_trend: by Using Python :snake:
 
+![Alt Text](covid19.gif)
 
 ## About The Project
 End-to-end dashboard project to visualize COVID 19 data of Turkey. 
