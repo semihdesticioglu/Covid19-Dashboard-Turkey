@@ -32,8 +32,6 @@ def prepare_df():
     data_all['totalTests'] = data_all['totalTests'].astype('int')
     data_all['cases'] = data_all['cases'].astype('int')
     data_all["new_cases"] = data_all.apply(new_case_calculator,axis=1)
-    data_all['total_new_cases'] = data_all['new_cases'].cumsum()
-    data_all['totalRecovered'] = data_all['recovered'].cumsum()
     data_all["daily_case_rate"] = data_all["new_cases"] / data_all["tests"]
     data_all["death_rate"] = data_all["totalDeaths"] / data_all["total_new_cases"]
     data_all["recovery_rate"] = data_all["totalRecovered"] / data_all["total_new_cases"]
@@ -148,7 +146,7 @@ def return_figures():
 # as a line chart
     
     graph_five = []
-    y1 = data_all.total_new_cases.tolist()
+    y1 = data_all.totalPatients.tolist()
     y_list = [y1]
     y_list_map = ["Total Cases"]
     for y in y_list:
