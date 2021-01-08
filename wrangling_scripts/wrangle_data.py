@@ -49,8 +49,7 @@ def return_figures():
 
     """
 
-# first chart plots arable land from 1990 to 2015 in top 10 economies 
-# as a line chart
+
     data_all = prepare_df()
     graph_one = []
     y1 = data_all.new_cases.tolist()
@@ -73,9 +72,7 @@ def return_figures():
                   autotick=False, tickmode = 'auto'),
                     rangeslider=dict(visible=False) )
 
-# first chart plots arable land from 1990 to 2015 in top 10 economies 
-# as a line chart
-    
+
     graph_two = []
     y1 = data_all.deaths.tolist()
     y_list = [y1]
@@ -96,8 +93,7 @@ def return_figures():
                 xaxis = dict(title = 'Date',
                   autotick=False, tickmode = 'auto'),
                       rangeslider=dict(visible=False))
-# first chart plots arable land from 1990 to 2015 in top 10 economies 
-# as a line chart
+
     
     graph_three = []
     y1 = data_all.tests.tolist()
@@ -119,9 +115,7 @@ def return_figures():
                 xaxis = dict(title = 'Date',
                   autotick=False, tickmode = 'auto'),
                       rangeslider=dict(visible=False))
-# first chart plots arable land from 1990 to 2015 in top 10 economies 
-# as a line chart
-    
+
     graph_four = []
     y1 = data_all.daily_case_rate.tolist()
     y_list = [y1]
@@ -142,8 +136,7 @@ def return_figures():
                 xaxis = dict(title = 'Date',
                   autotick=False, tickmode = 'auto'),
                       rangeslider=dict(visible=False))
-# first chart plots arable land from 1990 to 2015 in top 10 economies 
-# as a line chart
+
     
     graph_five = []
     y1 = data_all.totalPatients.tolist()
@@ -167,7 +160,7 @@ def return_figures():
                       rangeslider=dict(visible=False))
 
 
-# third chart plots percent of population that is rural from 1990 to 2015
+
     graph_six = []
     y1 = data_all.death_rate.tolist()
     y2 = data_all.recovery_rate.tolist()
